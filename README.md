@@ -18,4 +18,4 @@
 # Approach
 
 * Read in each record, then check to see if columns are null, empty, or if column count is the wrong size for each record.
-  * If the record passes the checks above: it is stored into a "good data" table.  Otherwise, the record is stored in the "bad data" table.
+  * If the record passes the checks above: it is used to create a "good data" object, then this is inserted into the "good data" table.  Otherwise, the record is created and stored in the "bad data" table.
